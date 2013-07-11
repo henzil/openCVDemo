@@ -53,14 +53,13 @@ public class MainActivity extends Activity implements CvCameraViewListener2 {
 		}
 	};
 
-	 @Override
-	 public void onPause()
-	 {
-	     super.onPause();
-	     if (mOpenCvCameraView != null)
-	         mOpenCvCameraView.disableView();
-	 }
-	
+	@Override
+	public void onPause() {
+		super.onPause();
+		if (mOpenCvCameraView != null)
+			mOpenCvCameraView.disableView();
+	}
+
 	@Override
 	public void onResume() {
 		super.onResume();
@@ -75,13 +74,13 @@ public class MainActivity extends Activity implements CvCameraViewListener2 {
 	@Override
 	public void onCameraViewStarted(int width, int height) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void onCameraViewStopped() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }
